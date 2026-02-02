@@ -100,16 +100,15 @@
         text-align: center;
         margin: 0;
 
-        /* Increase Font Size Further */
-        font-size: 1.5rem;
-        /* Increased from 1.35rem */
+        /* Force single line and adaptive size */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: clamp(1rem, 5vw, 1.5rem);
         line-height: normal;
-        /* Reset line-height */
+        width: 100%;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: block;
         pointer-events: auto;
     }
 
